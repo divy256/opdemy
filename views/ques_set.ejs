@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Set Exam</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/checkout/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+     <!-- Custom styles for this template -->
+    <link href="styles.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+    <div class="container">
+      <form action="/ques_set" method="post">
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Question</label>
+          <textarea class="form-control" name="ques_statement" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="ans_opt1">Answer 1</label>
+            <input id="ans_opt1"class="form-control" type="text" name="ansOpt1">
+         
+        </div>
+        <div class="form-group">
+          <label for="ans_opt2">Answer 2</label>
+            <input id="ans_opt2"class="form-control" type="text" name="ansOpt2">
+         
+        </div>
+        <div class="form-group">
+          <label for="ans_opt3">Answer 3</label>
+            <input id="ans_opt3"class="form-control" type="text" name="ansOpt3">
+          
+        </div>
+        <div class="form-group">
+          <label for="ans_opt4">Answer 4</label>
+            <input id="ans_opt4"class="form-control" type="text" name="ansOpt4">
+          
+        </div>
+        <div class="form-group">
+          <label for="ans_opt">Answer Key</label>
+            <input id="ans_opt"class="form-control" type="text" name="ansOpt">
+          
+        </div>
+        <a href="ques_set" type="submit" class="btn btn-info">Next Question</a>
+        
+        <a type="submit" href="dashboard" class="btn btn-info" >Finish</a>
+  
+      </form>
+      
+    </div>
+
+     
+
+
+
+    
+
+  </body>
+  </html>
+

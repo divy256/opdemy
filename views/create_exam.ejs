@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Create Exam</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/checkout/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+     <!-- Custom styles for this template -->
+    <link href="styles.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <h2>Enter Exam Basic Details</h2>
+        <p class="lead">Carefully fill-in all the details about the Exam.</p>
+      </div>
+
+        <div class="col-md-8 order-md-1">
+          <form class="needs-validation" action="/create_exam" method="post" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="examName">Exam Name</label>
+                <input type="text" class="form-control" id="examName"name="examName" value="" required>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="description">Description of Exam</label>
+                <textarea type="text" class="form-control" id="username" name="description" required></textarea> 
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="Tot_ques">Total Questions</label>
+                <input type="text" class="form-control" id="tot_ques" name="Totques" required>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="mark_ques">Marks Per Question</label>
+                <input type="text" class="form-control" id="mark_ques" name="markques" required>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="Tot_marks">Total Marks</label>
+                <input type="text" class="form-control" id="Tot_marks" name="Totmarks" required>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="ed_Id">Educator ID</label>
+                <input type="text" class="form-control" id="ed_Id" name="edId" required>
+              </div>
+               <div class="col-md-5 mb-3">
+                <label for="sub">Subject</label>
+                <input type="text" class="form-control" id="sub" name="sub" required>
+              </div>
+            </div>
+
+            <hr class="mb-4">
+            <a href="ques_set" class="btn btn-outline-info btn-lg" type="submit">Proceed</a>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>
+</html>
